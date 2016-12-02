@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05E9AFFB1C59F08000BE6729 /* PAInstructionLineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E9AFFA1C59F08000BE6729 /* PAInstructionLineTest.m */; };
+		05E9AFFD1C59F0F200BE6729 /* PAFileModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E9AFFC1C59F0F200BE6729 /* PAFileModelTest.m */; };
+		4C0F00021A662CC1001D902C /* PAMemoryLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F00011A662CC1001D902C /* PAMemoryLocationCell.xib */; };
+		4C24DE861A368ABD00F1EF1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24DE851A368ABD00F1EF1B /* main.m */; };
+		4C24DE891A368ABD00F1EF1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24DE881A368ABD00F1EF1B /* AppDelegate.m */; };
+		4C24DE8C1A368ABD00F1EF1B /* PAInterfaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24DE8B1A368ABD00F1EF1B /* PAInterfaceVC.m */; };
+		4C24DE911A368ABD00F1EF1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C24DE901A368ABD00F1EF1B /* Images.xcassets */; };
+		4C24DEB31A3B979900F1EF1B /* PAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24DEB21A3B979900F1EF1B /* PAModel.m */; };
+		4C24DEB61A3B9E3F00F1EF1B /* PAMemoryLocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24DEB51A3B9E3F00F1EF1B /* PAMemoryLocationCell.m */; };
+		4C24DEBC1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C24DEBB1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.m */; };
+		4C2679BF1AAE4A2F005E3C09 /* NSString+Substring.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2679BE1AAE4A2F005E3C09 /* NSString+Substring.m */; };
+		4C2679C21AAE5C94005E3C09 /* PAError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2679C11AAE5C94005E3C09 /* PAError.m */; };
+		4C2679C51AB12C72005E3C09 /* PALabelResolutionSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2679C41AB12C72005E3C09 /* PALabelResolutionSign.m */; };
+		4C8240541A6AF36700522B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C24DE8D1A368ABD00F1EF1B /* Main.storyboard */; };
+		4CB4993D1A69DFE9001FB568 /* PAFileEditInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4993C1A69DFE9001FB568 /* PAFileEditInputAccessoryView.m */; };
+		4CB4993F1A69E043001FB568 /* PAFileEditInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB4993E1A69E043001FB568 /* PAFileEditInputAccessoryView.xib */; };
+		4CD6ADE01A7EDFB700E4025D /* printDec.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CD6ADDF1A7EDFB700E4025D /* printDec.txt */; };
+		4CDEB8901A412CE1004DE8F3 /* PAUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB88B1A412CE1004DE8F3 /* PAUtility.m */; };
+		4CDEB89C1A4338F6004DE8F3 /* PABidirectionalDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB89B1A4338F6004DE8F3 /* PABidirectionalDictionary.m */; };
+		4CDEB90C1A4374C9004DE8F3 /* PARegistersDisplayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB90B1A4374C9004DE8F3 /* PARegistersDisplayCell.m */; };
+		4CDEB9181A43AEBB004DE8F3 /* PADiscardableTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9171A43AEBB004DE8F3 /* PADiscardableTextField.m */; };
+		4CDEB91B1A43DE52004DE8F3 /* PADisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB91A1A43DE52004DE8F3 /* PADisplayView.m */; };
+		4CDEB91E1A43E682004DE8F3 /* PAConsoleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB91D1A43E682004DE8F3 /* PAConsoleView.m */; };
+		4CDEB9211A44AC38004DE8F3 /* PAFileEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9201A44AC38004DE8F3 /* PAFileEditVC.m */; };
+		4CDEB95C1A44DA40004DE8F3 /* PAFileCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB95B1A44DA40004DE8F3 /* PAFileCollectionVC.m */; };
+		4CDEB9741A476E24004DE8F3 /* CYRLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB96D1A476E24004DE8F3 /* CYRLayoutManager.m */; };
+		4CDEB9751A476E24004DE8F3 /* CYRTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB96F1A476E24004DE8F3 /* CYRTextStorage.m */; };
+		4CDEB9761A476E24004DE8F3 /* CYRTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9711A476E24004DE8F3 /* CYRTextView.m */; };
+		4CDEB9771A476E24004DE8F3 /* CYRToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9731A476E24004DE8F3 /* CYRToken.m */; };
+		4CDEB97B1A477770004DE8F3 /* PAFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB97A1A477770004DE8F3 /* PAFileModel.m */; };
+		4CDEB97E1A4778DE004DE8F3 /* PAInstructionLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB97D1A4778DE004DE8F3 /* PAInstructionLine.m */; };
+		4CDEB9811A4A916D004DE8F3 /* lc3os.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEB97F1A4A9040004DE8F3 /* lc3os.txt */; };
+		4CDEB9881A4C71F9004DE8F3 /* PASettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9871A4C71F9004DE8F3 /* PASettingsVC.m */; };
+		4CDEB99A1A509AB5004DE8F3 /* PAFileSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9951A509AB5004DE8F3 /* PAFileSnapshot.m */; };
+		4CDEB99B1A509AB5004DE8F3 /* PAFileDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9971A509AB5004DE8F3 /* PAFileDocument.m */; };
+		4CDEB99C1A509AB5004DE8F3 /* PAFileEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEB9991A509AB5004DE8F3 /* PAFileEntry.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C24DE9A1A368ABD00F1EF1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C24DE781A368ABD00F1EF1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C24DE7F1A368ABD00F1EF1B;
+			remoteInfo = "Pocket Assembly";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E9AFFA1C59F08000BE6729 /* PAInstructionLineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAInstructionLineTest.m; sourceTree = "<group>"; };
+		05E9AFFC1C59F0F200BE6729 /* PAFileModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileModelTest.m; sourceTree = "<group>"; };
+		4C0F00011A662CC1001D902C /* PAMemoryLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAMemoryLocationCell.xib; sourceTree = "<group>"; };
+		4C24DE801A368ABD00F1EF1B /* Pocket Assembly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Assembly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C24DE841A368ABD00F1EF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C24DE851A368ABD00F1EF1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C24DE871A368ABD00F1EF1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C24DE881A368ABD00F1EF1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C24DE8A1A368ABD00F1EF1B /* PAInterfaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAInterfaceVC.h; sourceTree = "<group>"; };
+		4C24DE8B1A368ABD00F1EF1B /* PAInterfaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAInterfaceVC.m; sourceTree = "<group>"; };
+		4C24DE8E1A368ABD00F1EF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C24DE901A368ABD00F1EF1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C24DE991A368ABD00F1EF1B /* Pocket AssemblyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket AssemblyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C24DE9E1A368ABD00F1EF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C24DEB11A3B979900F1EF1B /* PAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAModel.h; sourceTree = "<group>"; };
+		4C24DEB21A3B979900F1EF1B /* PAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAModel.m; sourceTree = "<group>"; };
+		4C24DEB41A3B9E3F00F1EF1B /* PAMemoryLocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMemoryLocationCell.h; sourceTree = "<group>"; };
+		4C24DEB51A3B9E3F00F1EF1B /* PAMemoryLocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMemoryLocationCell.m; sourceTree = "<group>"; };
+		4C24DEBA1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMdlDcdExctnOperation.h; sourceTree = "<group>"; };
+		4C24DEBB1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMdlDcdExctnOperation.m; sourceTree = "<group>"; };
+		4C2679BD1AAE4A2F005E3C09 /* NSString+Substring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Substring.h"; sourceTree = "<group>"; };
+		4C2679BE1AAE4A2F005E3C09 /* NSString+Substring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Substring.m"; sourceTree = "<group>"; };
+		4C2679C01AAE5C94005E3C09 /* PAError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAError.h; sourceTree = "<group>"; };
+		4C2679C11AAE5C94005E3C09 /* PAError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAError.m; sourceTree = "<group>"; };
+		4C2679C31AB12C72005E3C09 /* PALabelResolutionSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALabelResolutionSign.h; sourceTree = "<group>"; };
+		4C2679C41AB12C72005E3C09 /* PALabelResolutionSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PALabelResolutionSign.m; sourceTree = "<group>"; };
+		4CB4993B1A69DFE9001FB568 /* PAFileEditInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileEditInputAccessoryView.h; sourceTree = "<group>"; };
+		4CB4993C1A69DFE9001FB568 /* PAFileEditInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileEditInputAccessoryView.m; sourceTree = "<group>"; };
+		4CB4993E1A69E043001FB568 /* PAFileEditInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAFileEditInputAccessoryView.xib; sourceTree = "<group>"; };
+		4CD6ADDF1A7EDFB700E4025D /* printDec.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = printDec.txt; sourceTree = "<group>"; };
+		4CDEB88A1A412CE1004DE8F3 /* PAUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAUtility.h; sourceTree = "<group>"; };
+		4CDEB88B1A412CE1004DE8F3 /* PAUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAUtility.m; sourceTree = "<group>"; };
+		4CDEB89A1A4338F6004DE8F3 /* PABidirectionalDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PABidirectionalDictionary.h; sourceTree = "<group>"; };
+		4CDEB89B1A4338F6004DE8F3 /* PABidirectionalDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PABidirectionalDictionary.m; sourceTree = "<group>"; };
+		4CDEB90A1A4374C9004DE8F3 /* PARegistersDisplayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PARegistersDisplayCell.h; sourceTree = "<group>"; };
+		4CDEB90B1A4374C9004DE8F3 /* PARegistersDisplayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PARegistersDisplayCell.m; sourceTree = "<group>"; };
+		4CDEB9161A43AEBB004DE8F3 /* PADiscardableTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADiscardableTextField.h; sourceTree = "<group>"; };
+		4CDEB9171A43AEBB004DE8F3 /* PADiscardableTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADiscardableTextField.m; sourceTree = "<group>"; };
+		4CDEB9191A43DE52004DE8F3 /* PADisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADisplayView.h; sourceTree = "<group>"; };
+		4CDEB91A1A43DE52004DE8F3 /* PADisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADisplayView.m; sourceTree = "<group>"; };
+		4CDEB91C1A43E682004DE8F3 /* PAConsoleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAConsoleView.h; sourceTree = "<group>"; };
+		4CDEB91D1A43E682004DE8F3 /* PAConsoleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAConsoleView.m; sourceTree = "<group>"; };
+		4CDEB91F1A44AC38004DE8F3 /* PAFileEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileEditVC.h; sourceTree = "<group>"; };
+		4CDEB9201A44AC38004DE8F3 /* PAFileEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileEditVC.m; sourceTree = "<group>"; };
+		4CDEB95A1A44DA40004DE8F3 /* PAFileCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileCollectionVC.h; sourceTree = "<group>"; };
+		4CDEB95B1A44DA40004DE8F3 /* PAFileCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileCollectionVC.m; sourceTree = "<group>"; };
+		4CDEB96C1A476E24004DE8F3 /* CYRLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRLayoutManager.h; sourceTree = "<group>"; };
+		4CDEB96D1A476E24004DE8F3 /* CYRLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRLayoutManager.m; sourceTree = "<group>"; };
+		4CDEB96E1A476E24004DE8F3 /* CYRTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextStorage.h; sourceTree = "<group>"; };
+		4CDEB96F1A476E24004DE8F3 /* CYRTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextStorage.m; sourceTree = "<group>"; };
+		4CDEB9701A476E24004DE8F3 /* CYRTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRTextView.h; sourceTree = "<group>"; };
+		4CDEB9711A476E24004DE8F3 /* CYRTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRTextView.m; sourceTree = "<group>"; };
+		4CDEB9721A476E24004DE8F3 /* CYRToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRToken.h; sourceTree = "<group>"; };
+		4CDEB9731A476E24004DE8F3 /* CYRToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRToken.m; sourceTree = "<group>"; };
+		4CDEB9791A477770004DE8F3 /* PAFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileModel.h; sourceTree = "<group>"; };
+		4CDEB97A1A477770004DE8F3 /* PAFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileModel.m; sourceTree = "<group>"; };
+		4CDEB97C1A4778DE004DE8F3 /* PAInstructionLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAInstructionLine.h; sourceTree = "<group>"; };
+		4CDEB97D1A4778DE004DE8F3 /* PAInstructionLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAInstructionLine.m; sourceTree = "<group>"; };
+		4CDEB97F1A4A9040004DE8F3 /* lc3os.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; path = lc3os.txt; sourceTree = "<group>"; usesTabs = 1; };
+		4CDEB9861A4C71F9004DE8F3 /* PASettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASettingsVC.h; sourceTree = "<group>"; };
+		4CDEB9871A4C71F9004DE8F3 /* PASettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASettingsVC.m; sourceTree = "<group>"; };
+		4CDEB9941A509AB5004DE8F3 /* PAFileSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileSnapshot.h; sourceTree = "<group>"; };
+		4CDEB9951A509AB5004DE8F3 /* PAFileSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileSnapshot.m; sourceTree = "<group>"; };
+		4CDEB9961A509AB5004DE8F3 /* PAFileDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileDocument.h; sourceTree = "<group>"; };
+		4CDEB9971A509AB5004DE8F3 /* PAFileDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileDocument.m; sourceTree = "<group>"; };
+		4CDEB9981A509AB5004DE8F3 /* PAFileEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFileEntry.h; sourceTree = "<group>"; };
+		4CDEB9991A509AB5004DE8F3 /* PAFileEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFileEntry.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C24DE7D1A368ABD00F1EF1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24DE961A368ABD00F1EF1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C24DE771A368ABD00F1EF1B = {
+			isa = PBXGroup;
+			children = (
+				4C24DE821A368ABD00F1EF1B /* Pocket Assembly */,
+				4C24DE9C1A368ABD00F1EF1B /* Pocket AssemblyTests */,
+				4C24DE811A368ABD00F1EF1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C24DE811A368ABD00F1EF1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C24DE801A368ABD00F1EF1B /* Pocket Assembly.app */,
+				4C24DE991A368ABD00F1EF1B /* Pocket AssemblyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C24DE821A368ABD00F1EF1B /* Pocket Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB97F1A4A9040004DE8F3 /* lc3os.txt */,
+				4CD6ADDF1A7EDFB700E4025D /* printDec.txt */,
+				4CDEB89A1A4338F6004DE8F3 /* PABidirectionalDictionary.h */,
+				4CDEB89B1A4338F6004DE8F3 /* PABidirectionalDictionary.m */,
+				4CDEB88A1A412CE1004DE8F3 /* PAUtility.h */,
+				4CDEB88B1A412CE1004DE8F3 /* PAUtility.m */,
+				4C24DE871A368ABD00F1EF1B /* AppDelegate.h */,
+				4C24DE881A368ABD00F1EF1B /* AppDelegate.m */,
+				4CDEB95D1A44DB51004DE8F3 /* ViewControllers */,
+				4CDEB90D1A4374D2004DE8F3 /* Views */,
+				4C24DEC01A3BAFB100F1EF1B /* Models */,
+				4C24DE8D1A368ABD00F1EF1B /* Main.storyboard */,
+				4C24DE901A368ABD00F1EF1B /* Images.xcassets */,
+				4C24DE831A368ABD00F1EF1B /* Supporting Files */,
+			);
+			path = "Pocket Assembly";
+			sourceTree = "<group>";
+		};
+		4C24DE831A368ABD00F1EF1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C2679C01AAE5C94005E3C09 /* PAError.h */,
+				4C2679C11AAE5C94005E3C09 /* PAError.m */,
+				4C24DE841A368ABD00F1EF1B /* Info.plist */,
+				4C24DE851A368ABD00F1EF1B /* main.m */,
+				4C2679BD1AAE4A2F005E3C09 /* NSString+Substring.h */,
+				4C2679BE1AAE4A2F005E3C09 /* NSString+Substring.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C24DE9C1A368ABD00F1EF1B /* Pocket AssemblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C24DE9D1A368ABD00F1EF1B /* Supporting Files */,
+				05E9AFFA1C59F08000BE6729 /* PAInstructionLineTest.m */,
+				05E9AFFC1C59F0F200BE6729 /* PAFileModelTest.m */,
+			);
+			path = "Pocket AssemblyTests";
+			sourceTree = "<group>";
+		};
+		4C24DE9D1A368ABD00F1EF1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C24DE9E1A368ABD00F1EF1B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C24DEC01A3BAFB100F1EF1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB99D1A509AFD004DE8F3 /* File Collction Management */,
+				4CDEB9681A47553C004DE8F3 /* interface vc */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4CDEB90D1A4374D2004DE8F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB9781A476E32004DE8F3 /* CYRTextView */,
+				4CDEB9671A475512004DE8F3 /* interface vc */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4CDEB95D1A44DB51004DE8F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB95A1A44DA40004DE8F3 /* PAFileCollectionVC.h */,
+				4CDEB95B1A44DA40004DE8F3 /* PAFileCollectionVC.m */,
+				4CDEB91F1A44AC38004DE8F3 /* PAFileEditVC.h */,
+				4CDEB9201A44AC38004DE8F3 /* PAFileEditVC.m */,
+				4C24DE8A1A368ABD00F1EF1B /* PAInterfaceVC.h */,
+				4C24DE8B1A368ABD00F1EF1B /* PAInterfaceVC.m */,
+				4CDEB9861A4C71F9004DE8F3 /* PASettingsVC.h */,
+				4CDEB9871A4C71F9004DE8F3 /* PASettingsVC.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CDEB9671A475512004DE8F3 /* interface vc */ = {
+			isa = PBXGroup;
+			children = (
+				4CB4993B1A69DFE9001FB568 /* PAFileEditInputAccessoryView.h */,
+				4CB4993C1A69DFE9001FB568 /* PAFileEditInputAccessoryView.m */,
+				4CB4993E1A69E043001FB568 /* PAFileEditInputAccessoryView.xib */,
+				4CDEB91C1A43E682004DE8F3 /* PAConsoleView.h */,
+				4CDEB91D1A43E682004DE8F3 /* PAConsoleView.m */,
+				4CDEB9191A43DE52004DE8F3 /* PADisplayView.h */,
+				4CDEB91A1A43DE52004DE8F3 /* PADisplayView.m */,
+				4CDEB9161A43AEBB004DE8F3 /* PADiscardableTextField.h */,
+				4CDEB9171A43AEBB004DE8F3 /* PADiscardableTextField.m */,
+				4C24DEB41A3B9E3F00F1EF1B /* PAMemoryLocationCell.h */,
+				4C24DEB51A3B9E3F00F1EF1B /* PAMemoryLocationCell.m */,
+				4C0F00011A662CC1001D902C /* PAMemoryLocationCell.xib */,
+				4CDEB90A1A4374C9004DE8F3 /* PARegistersDisplayCell.h */,
+				4CDEB90B1A4374C9004DE8F3 /* PARegistersDisplayCell.m */,
+			);
+			name = "interface vc";
+			sourceTree = "<group>";
+		};
+		4CDEB9681A47553C004DE8F3 /* interface vc */ = {
+			isa = PBXGroup;
+			children = (
+				4C24DEB11A3B979900F1EF1B /* PAModel.h */,
+				4C24DEB21A3B979900F1EF1B /* PAModel.m */,
+				4C24DEBA1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.h */,
+				4C24DEBB1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.m */,
+			);
+			name = "interface vc";
+			sourceTree = "<group>";
+		};
+		4CDEB9781A476E32004DE8F3 /* CYRTextView */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB96C1A476E24004DE8F3 /* CYRLayoutManager.h */,
+				4CDEB96D1A476E24004DE8F3 /* CYRLayoutManager.m */,
+				4CDEB96E1A476E24004DE8F3 /* CYRTextStorage.h */,
+				4CDEB96F1A476E24004DE8F3 /* CYRTextStorage.m */,
+				4CDEB9701A476E24004DE8F3 /* CYRTextView.h */,
+				4CDEB9711A476E24004DE8F3 /* CYRTextView.m */,
+				4CDEB9721A476E24004DE8F3 /* CYRToken.h */,
+				4CDEB9731A476E24004DE8F3 /* CYRToken.m */,
+			);
+			name = CYRTextView;
+			sourceTree = "<group>";
+		};
+		4CDEB99D1A509AFD004DE8F3 /* File Collction Management */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEB97C1A4778DE004DE8F3 /* PAInstructionLine.h */,
+				4CDEB97D1A4778DE004DE8F3 /* PAInstructionLine.m */,
+				4C2679C31AB12C72005E3C09 /* PALabelResolutionSign.h */,
+				4C2679C41AB12C72005E3C09 /* PALabelResolutionSign.m */,
+				4CDEB9791A477770004DE8F3 /* PAFileModel.h */,
+				4CDEB97A1A477770004DE8F3 /* PAFileModel.m */,
+				4CDEB9941A509AB5004DE8F3 /* PAFileSnapshot.h */,
+				4CDEB9951A509AB5004DE8F3 /* PAFileSnapshot.m */,
+				4CDEB9961A509AB5004DE8F3 /* PAFileDocument.h */,
+				4CDEB9971A509AB5004DE8F3 /* PAFileDocument.m */,
+				4CDEB9981A509AB5004DE8F3 /* PAFileEntry.h */,
+				4CDEB9991A509AB5004DE8F3 /* PAFileEntry.m */,
+			);
+			name = "File Collction Management";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C24DE7F1A368ABD00F1EF1B /* Pocket Assembly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C24DEA31A368ABD00F1EF1B /* Build configuration list for PBXNativeTarget "Pocket Assembly" */;
+			buildPhases = (
+				4C24DE7C1A368ABD00F1EF1B /* Sources */,
+				4C24DE7D1A368ABD00F1EF1B /* Frameworks */,
+				4C24DE7E1A368ABD00F1EF1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pocket Assembly";
+			productName = "Pocket Assembly";
+			productReference = 4C24DE801A368ABD00F1EF1B /* Pocket Assembly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C24DE981A368ABD00F1EF1B /* Pocket AssemblyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C24DEA61A368ABD00F1EF1B /* Build configuration list for PBXNativeTarget "Pocket AssemblyTests" */;
+			buildPhases = (
+				4C24DE951A368ABD00F1EF1B /* Sources */,
+				4C24DE961A368ABD00F1EF1B /* Frameworks */,
+				4C24DE971A368ABD00F1EF1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C24DE9B1A368ABD00F1EF1B /* PBXTargetDependency */,
+			);
+			name = "Pocket AssemblyTests";
+			productName = "Pocket AssemblyTests";
+			productReference = 4C24DE991A368ABD00F1EF1B /* Pocket AssemblyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C24DE781A368ABD00F1EF1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "G. Yan";
+				TargetAttributes = {
+					4C24DE7F1A368ABD00F1EF1B = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9H8793KMK2;
+					};
+					4C24DE981A368ABD00F1EF1B = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 4C24DE7F1A368ABD00F1EF1B;
+					};
+				};
+			};
+			buildConfigurationList = 4C24DE7B1A368ABD00F1EF1B /* Build configuration list for PBXProject "Pocket Assembly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C24DE771A368ABD00F1EF1B;
+			productRefGroup = 4C24DE811A368ABD00F1EF1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C24DE7F1A368ABD00F1EF1B /* Pocket Assembly */,
+				4C24DE981A368ABD00F1EF1B /* Pocket AssemblyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C24DE7E1A368ABD00F1EF1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8240541A6AF36700522B29 /* Main.storyboard in Resources */,
+				4CDEB9811A4A916D004DE8F3 /* lc3os.txt in Resources */,
+				4CD6ADE01A7EDFB700E4025D /* printDec.txt in Resources */,
+				4C24DE911A368ABD00F1EF1B /* Images.xcassets in Resources */,
+				4CB4993F1A69E043001FB568 /* PAFileEditInputAccessoryView.xib in Resources */,
+				4C0F00021A662CC1001D902C /* PAMemoryLocationCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24DE971A368ABD00F1EF1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C24DE7C1A368ABD00F1EF1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C24DE8C1A368ABD00F1EF1B /* PAInterfaceVC.m in Sources */,
+				4CDEB9181A43AEBB004DE8F3 /* PADiscardableTextField.m in Sources */,
+				4CDEB9771A476E24004DE8F3 /* CYRToken.m in Sources */,
+				4CDEB89C1A4338F6004DE8F3 /* PABidirectionalDictionary.m in Sources */,
+				4C24DE891A368ABD00F1EF1B /* AppDelegate.m in Sources */,
+				4CDEB91E1A43E682004DE8F3 /* PAConsoleView.m in Sources */,
+				4CB4993D1A69DFE9001FB568 /* PAFileEditInputAccessoryView.m in Sources */,
+				4CDEB91B1A43DE52004DE8F3 /* PADisplayView.m in Sources */,
+				4C2679C51AB12C72005E3C09 /* PALabelResolutionSign.m in Sources */,
+				4CDEB9741A476E24004DE8F3 /* CYRLayoutManager.m in Sources */,
+				4CDEB97B1A477770004DE8F3 /* PAFileModel.m in Sources */,
+				4C2679C21AAE5C94005E3C09 /* PAError.m in Sources */,
+				4CDEB99B1A509AB5004DE8F3 /* PAFileDocument.m in Sources */,
+				4CDEB8901A412CE1004DE8F3 /* PAUtility.m in Sources */,
+				4CDEB9211A44AC38004DE8F3 /* PAFileEditVC.m in Sources */,
+				4CDEB99A1A509AB5004DE8F3 /* PAFileSnapshot.m in Sources */,
+				4CDEB90C1A4374C9004DE8F3 /* PARegistersDisplayCell.m in Sources */,
+				4C24DEB31A3B979900F1EF1B /* PAModel.m in Sources */,
+				4CDEB9751A476E24004DE8F3 /* CYRTextStorage.m in Sources */,
+				4CDEB99C1A509AB5004DE8F3 /* PAFileEntry.m in Sources */,
+				4C24DEB61A3B9E3F00F1EF1B /* PAMemoryLocationCell.m in Sources */,
+				4C24DE861A368ABD00F1EF1B /* main.m in Sources */,
+				4CDEB97E1A4778DE004DE8F3 /* PAInstructionLine.m in Sources */,
+				4CDEB9761A476E24004DE8F3 /* CYRTextView.m in Sources */,
+				4CDEB95C1A44DA40004DE8F3 /* PAFileCollectionVC.m in Sources */,
+				4CDEB9881A4C71F9004DE8F3 /* PASettingsVC.m in Sources */,
+				4C24DEBC1A3BA34800F1EF1B /* PAMdlDcdExctnOperation.m in Sources */,
+				4C2679BF1AAE4A2F005E3C09 /* NSString+Substring.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C24DE951A368ABD00F1EF1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05E9AFFD1C59F0F200BE6729 /* PAFileModelTest.m in Sources */,
+				05E9AFFB1C59F08000BE6729 /* PAInstructionLineTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C24DE9B1A368ABD00F1EF1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C24DE7F1A368ABD00F1EF1B /* Pocket Assembly */;
+			targetProxy = 4C24DE9A1A368ABD00F1EF1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C24DE8D1A368ABD00F1EF1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C24DE8E1A368ABD00F1EF1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C24DEA11A368ABD00F1EF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4C24DEA21A368ABD00F1EF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C24DEA41A368ABD00F1EF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Pocket Assembly/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GY.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C24DEA51A368ABD00F1EF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Pocket Assembly/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GY.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C24DEA71A368ABD00F1EF1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pocket AssemblyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GY.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocket Assembly.app/Pocket Assembly";
+			};
+			name = Debug;
+		};
+		4C24DEA81A368ABD00F1EF1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pocket AssemblyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GY.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pocket Assembly.app/Pocket Assembly";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C24DE7B1A368ABD00F1EF1B /* Build configuration list for PBXProject "Pocket Assembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24DEA11A368ABD00F1EF1B /* Debug */,
+				4C24DEA21A368ABD00F1EF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C24DEA31A368ABD00F1EF1B /* Build configuration list for PBXNativeTarget "Pocket Assembly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24DEA41A368ABD00F1EF1B /* Debug */,
+				4C24DEA51A368ABD00F1EF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C24DEA61A368ABD00F1EF1B /* Build configuration list for PBXNativeTarget "Pocket AssemblyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24DEA71A368ABD00F1EF1B /* Debug */,
+				4C24DEA81A368ABD00F1EF1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C24DE781A368ABD00F1EF1B /* Project object */;
+}

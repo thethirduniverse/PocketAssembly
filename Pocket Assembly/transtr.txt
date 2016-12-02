@@ -1,0 +1,176 @@
+.orig x3000
+START
+
+; process test string #1
+LEA R0, STR_BEFORE
+PUTS
+LEA R0, TEST1
+PUTS
+JSR TRANSTR
+LEA R0, STR_AFTER
+PUTS
+LEA R0, TEST1
+PUTS
+
+; process test string #2
+LEA R0, STR_BEFORE
+PUTS
+LEA R0, TEST2
+PUTS
+JSR TRANSTR
+LEA R0, STR_AFTER
+PUTS
+LEA R0, TEST2
+PUTS
+
+; process test string #3
+LEA R0, STR_BEFORE
+PUTS
+LEA R0, TEST3
+PUTS
+JSR TRANSTR
+LEA R0, STR_AFTER
+PUTS
+LEA R0, TEST3
+PUTS
+
+HALT
+
+; test data
+TEST1 	.STRINGZ	"The Quick Brown Fox Jumps Over A Lazy Dog."
+TEST2	.STRINGZ	"text substitution can make reading difficult"
+TEST3	.STRINGZ 	"252 is Awesome!"
+STR_BEFORE	.STRINGZ "\n\nBEFORE: "
+STR_AFTER	.STRINGZ "\nAFTER: "
+
+; translation table (charcter followed by translation)
+TRANCHAR_TABLE
+.FILL	x41	; 'A' becomes '4'
+.FILL	x34
+;
+.FILL	x42	; 'B' becomes '8'
+.FILL	x38
+;
+.FILL	x45	; 'E' becomes '3'
+.FILL	x33
+;
+.FILL	x47	; 'G' becomes '6'
+.FILL 	x36
+;
+.FILL	x4F	; 'O' becomes '0'
+.FILL 	x30
+;
+.FILL	x53	; 'S' becomes '5'
+.FILL	x35
+;
+.FILL	x54	; 'T' becomes '7'
+.FILL	x37
+;
+.FILL	x61	; 'a' becomes '@'
+.FILL	x40
+;
+.FILL	x62	; 'b' becomes '6'
+.FILL	x36
+;
+.FILL	x63	; 'c' becomes '<'
+.FILL 	x3C
+;
+.FILL	x65	; 'e' becomes '3'
+.FILL	x33
+;
+.FILL	x67	; 'g' becomes '9'
+.FILL	x39
+;
+.FILL	x69	; 'i' becomes '1'
+.FILL	x31
+;
+.FILL	x6C	; 'l' becomes '1'
+.FILL	x31
+;
+.FILL	x6F	; 'o' becomes '0'
+.FILL	x30
+;
+.FILL	x73	; 's' becomes '$'
+.FILL	x24
+;
+.FILL	x78	; 'x' becomes 'X'
+.FILL	x58
+;
+.FILL	x0	; end of table
+
+
+; COPY YOUR TRANCHAR SUBROUTINE, including its comments and data, below here
+TRANCHAR
+ST	R2	R2_S
+ST	R3	R3_S	; context save
+
+LEA	R2	TRANCHAR_TABLE	; Use R2 as the iterating pointer to search
+; through the whole table, and use R3 to 						; temporarily store the data used in calculation
+
+
+LOOP
+LDR	R3	R2	#0	; load the data in the pointer to R3
+BRz	TRANCHAR_EXIT		; if reach end of table, then exit
+
+NOT	R3	R3
+ADD	R3	R3	#1
+ADD	R3	R3	R1
+BRz	EQUAL			; compare R3 to R1, if equal, jump to EQUAL
+; to perform necessary operation
+
+ADD	R2	R2	#2	; if not equal, increment the pointer to skip
+; the translated character in the table
+BRnzp	LOOP			; restart the loop to check the next pair of values
+
+EQUAL	LDR	R1	R2	#1	; if equal, load the next value in the list
+; to R1
+BRnzp	TRANCHAR_EXIT		; and exit
+
+
+TRANCHAR_EXIT
+LD	R2	R2_S
+LD	R3	R3_S	; restore R2 and R3
+RET
+
+R2_S	.FILL	x0000	; the location to save R2 for restoration
+R3_S	.FILL	x0000	; the location to save R3 for restoration
+
+; COPY YOUR TRANCHAR SUBROUTINE, including its comments and data, above here
+
+; -----------------------------
+; TURN IN EVERYTHING BELOW HERE
+; -----------------------------
+
+; Guanqing Yan - 9069819184
+;
+; TRANSTR
+; Overwrites the string pointed to by R0 with a translated string where
+; some characters have been substituted according to a table located in the
+; TRANCHAR subroutine
+;
+; Assumes:
+;    R0 - pointer to string to be converted in-place (overwritten)
+; Returns:
+;    Nothing
+
+TRANSTR
+ST	R0	R0_S	; context save, R0 will mutated to point to each char
+ST	R1	R1_S	; R1 will be used to contain each char to pass to TRANSCHAR
+ST	R7	R7_S	; R1 will be used to contain each char to pass to
+
+TRANSTR_LOOP	LDR	R1	R0	#0
+BRz	TRANSTR_EXIT	; load the char at memory location specified by R0
+; if reach end of string, exit
+JSR	TRANCHAR	; translate the character in R1
+STR	R1	R0	#0	; save the translated char back
+ADD	R0	R0	#1	; increment pointer to point to next char
+BRnzp	TRANSTR_LOOP	; go back to beginning of loop to translate next char
+TRANSTR_EXIT
+LD	R0	R0_S
+LD	R1	R1_S
+LD	R7	R7_S	; context restore
+RET
+R0_S	.FILL	x0000
+R1_S	.FILL	x0000
+R7_S	.FILL	x0000
+.end
